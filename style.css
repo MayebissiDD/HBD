@@ -1,0 +1,106 @@
+@font-face{
+    font-family: cairo;
+    src: url('../fonts/Cairo-Regular.ttf');
+}
+
+@font-face{
+    font-family: poppins;
+    src: url('../fonts/Poppins-Regular.ttf');
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+    background-color: #c6e6d469;
+}
+
+.grey-bg-color{
+    background: #ccc;
+}
+
+
+.bg-blue{
+    background: rgba(106, 157, 253, 0.637);
+    size: 14px;
+}
+
+.bg-blue-jum{
+    background: rgba(106, 157, 253, 0.637);
+    color: rgb(20, 40, 107);
+    size: 14px;
+    text-align: center;
+}
+.mb-jum{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+/* Menu Navigation */
+
+
+
+@media (max-width:755px) {
+    .d-contact-img{
+        display: none;
+    }
+}
+
+
+/* HBD CHE */
+
+
+#Che .container-fluid .form-submit{
+    display: flex;
+    justify-content: center;
+}
+
+#Che .container-fluid .form-submit button svg{
+    transition: 1s ease-in;
+}
+
+#Che .container-fluid .form-submit button:hover{
+    background-color: rgb(24, 65, 154);
+    color: rgba(236, 222, 222, 0.918);
+}
+
+#Che .container-fluid .form-submit button:hover svg{
+    font-size: 1.4rem;
+}
+
+#Che .container-fluid .form-submit button{
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(24, 65, 154);
+    border-bottom-left-radius: 10px;
+    border-radius: 25px;
+    color: rgb(20, 40, 107);
+}
+
+#Che .container-fluid .form-submit button:hover{
+    background-color: rgb(24, 65, 154);
+    color: rgba(236, 222, 222, 0.918);
+}
+
+#Che .container-fluid .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    border: 5px solid; 
+}
+
+#Che .container-fluid .modal{
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.5s;
+
+} 
+button:focus + .modal{
+    opacity: 1;
+    visibility: visible;
+}
